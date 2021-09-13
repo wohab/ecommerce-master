@@ -1,0 +1,39 @@
+@import './_vars';
+@import './_custom-table';
+@import './_mixins';
+@import './_slider';
+
+.custom-form-control, .custom-btn {
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+    border-radius: 2px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    padding: 6px 16px 7px 16px;
+    color: #868686;
+}
+
+.custom-navbar .container .custom-form-control:focus {
+    border-color: $btn-danger-color-dark;
+    box-shadow: 0 0 2px 0 $btn-danger-color-dark;
+}
+
+.custom-btn:hover {
+    background-color: #d4d4d4;
+    border: 1px solid #8c8c8c;
+    color: $btn-primary-color-dark;
+}
+
+.custom-btn-primary {
+    @include button-style($brand-primary, $btn-primary-color-dark);
+}
+
+.custom-btn-primary2 {
+    @include button-style($brand-primary, $btn-primary-color-dark)
+}
+
+.custom-btn-danger {
+    @include button-style($brand-danger, $btn-danger-color-dark)
+
+    // border-radius: 3px;
+}

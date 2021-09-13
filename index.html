@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر عربي</title>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- <script type="text/javascript" src="./index.js"></script> -->
+    <!-- js -->
+    <script type="text/html" src="{require('index.js')}"></script>
+
+    <!-- <script type="text/javascript" src="./index.js"></script> -->
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- بداية الشريط العلوي -->
+        <div class="row">
+            <nav class="navbar custom-navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggler btn btn-icon collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <a href="./checkout.html" class="btn custom-btn btn-icon d-lg-none" data-toggle="tooltip" data-placement="bottom"
+                            title="عربة الشراء">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <a href="." class="navbar-brand">
+                            <img src="./images/logo.png" alt="متجر عربي">
+                        </a>
+                    </div>
+                    <form class="form-inline">
+                        <input type="search" class="form-control custom-form-control" placeholder="إبحث ..">
+                        <div class="dropdown categories">
+                            <a href="#" class="nav-link dropdown-toggle custom-btn" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                أختار فئة
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="men">
+                                            رجالي
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="women">
+                                            نسائي
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="kids">
+                                            أطفال
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="submit" class="btn search-btn">
+                            إبحث
+                        </button>
+                    </form>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link">الصفحى الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-menu-right">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">أقسام المتجر</a>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item">رجالي</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">نسائي</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">أطفال</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="search.html" class="nav-link">البحث المتقدم</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">تواصل معنى</a>
+                            </li>
+                            <li class="d-none d-lg-block">
+                                <a href="./checkout.html" id="btn-shoppingcart" class="btn custom-btn btn-icon" data-toggle="tooltip"
+                                    data-placement="bottom" title="عربة الشراء">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- نهاية الشريط العلوي -->
+
+        <!-- المنتجات المميزة -->
+        <div class="row carousel-row">
+            <div class="col-12">
+                <div id="carousel-featured" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 offset-lg-2 text-center">
+                                        <img src="./images/lacoste_1.png" alt="تيشيرت رجالي من لاكوس">
+                                    </div>
+                                    <div class="col-12 col-lg-5 col-md-8">
+                                        <div class="product-details">
+                                            <div class="sale large">
+                                                50%
+                                                <span>خصم</span>
+                                            </div>
+                                            <div class="product-category">تخفيطات</div>
+                                            <h1>تيشيرت رجالي من لاكوس</h1>
+                                            <a class="btn btn-lg custom-btn custom-btn-primary" href="product.html">تسوق الأن</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 offset-lg-2 text-center">
+                                        <img src="./images/lacoste_2.png" alt="حقيبة شانتاكو النسائية">
+                                    </div>
+                                    <div class="col-12 col-lg-5 col-md-8">
+                                        <div class="product-details">
+                                            <div class="product-category">نسائي</div>
+                                            <h1>حقيبة شانتاكو النسائية</h1>
+                                            <a class="btn btn-lg custom-btn custom-btn-primary" href="product.html">تسوق الأن</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 offset-lg-2 text-center">
+                                        <img src="./images/lacoste_3.png" alt="تيشيرت بونو">
+                                    </div>
+                                    <div class="col-12 col-lg-5 col-md-8">
+                                        <div class="product-details">
+                                            <div class="product-category">الأكثر مبيعًا</div>
+                                            <h1>تيشيرت بونو</h1>
+                                            <a class="btn btn-lg custom-btn custom-btn-primary" href="product.html">تسوق الأن</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-12 col-md-4 offset-lg-2 text-center">
+                                        <img src="./images/adidas_3.png" alt="بدلة فايريرد الرياضية">
+                                    </div>
+                                    <div class="col-lg-5 col-md-8">
+                                        <div class="product-details">
+                                            <div class="product-category">أطفال</div>
+                                            <h1>بدلة فايريرد الرياضية</h1>
+                                            <a class="btn btn-lg custom-btn custom-btn-primary" href="product.html">تسوق الأن</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- الصور المصغرة -->
+                    <div class="carousel-indicators custom-carousel-indicators-primary">
+                        <img src="./images/lacoste_1.png" alt="تيشيرت رجالي من لاكوس" data-target="#carousel-featured" data-slide-to="0" class="active">
+                        <img src="./images/lacoste_2.png" alt="حقيبة فايريرد نسائي" data-target="#carousel-featured" data-slide-to="1">
+                        <img src="./images/lacoste_3.png" alt="تيشيرت رجالي من بونو" data-target="#carousel-featured" data-slide-to="2">
+                        <img src="./images/adidas_3.png" alt="بدلة فايريرد الرياضية" data-target="#carousel-featured" data-slide-to="3">
+                    </div>
+                    <!-- نهاية الصور المصغرة -->
+
+                    <!-- أسهم التنقل -->
+                    <a href="#carousel-featured" class="carousel-control-prev" data-slide="prev">
+                        <i class="fas fa-angle-right fa-3x"></i>
+                    </a>
+                    <a href="#carousel-featured" class="carousel-control-next" data-slide="next">
+                        <i class="fas fa-angle-left fa-3x"></i>
+                    </a>
+                    <!-- نهاية اسهم التنقل -->
+                </div>
+            </div>
+        </div>
+        <!-- نهاية المنتجات المميزة -->
+
+        <!-- مميزات المتجر -->
+        <div class="container">
+            <div class="row">
+                <div id="store-features" class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <h3 class="text-center custom-heading">
+                        مميزات المتجر
+                    </h3>
+                    <div class="row">
+                        <div class="col-4 text-center feature">
+                            <img src="./images/feature_1.png" alt="التوصيل المجاني">
+                            <div>التوصيل المجاني</div>
+                        </div>
+                        <div class="col-4 text-center feature">
+                            <img src="./images/feature_2.png" alt="ضمان المنتج سنة">
+                            <div>ضمان المنتج سنة</div>
+                        </div>
+                        <div class="col-4 text-center feature">
+                            <img src="./images/feature_3.png" alt="إسترجاع المنتج">
+                            <div>إسترجاع المنتج</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- نهاية مميزات المتجر -->
+
+        <!-- المنتجات الأكثر مبيعا -->
+        <div class="row">
+            <div class="container">
+                <h3 class="text-center custom-heading">
+                    الأكثر مبيعا
+                </h3>
+                <!-- carousel الأساسية -->
+                <div id="carousel-most-sold" class="carousel slide d-none d-md-block" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay">
+                                            <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                        <img src="./images/most_sold_2.jpg"  alt="فتورا تيشيرت">
+                                        <div class="card-body">
+                                            <h4 class="text-center">فتورا تيشيرت</h4>
+                                            <div class="price text-center">
+                                                35$
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="clearfix">
+                                                <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                                    إضافة للعربية
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay">
+                                            <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                        <img src="./images/most_sold_1.jpg" alt="شير بنوز من نافي">
+                                        <div class="card-body">
+                                            <h4 class="text-center">شير بنوز من نافي</h4>
+                                            <div class="price text-center">
+                                                88$
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="clearfix">
+                                                <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                                    إضافة للعربية
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="sale">50%</div>
+                                        <div class="overlay">
+                                            <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                        <img src="./images/most_sold_3.jpg" alt="جاكت أولادي">
+                                        <div class="card-body">
+                                            <h4 class="text-center">جاكت أولادي</h4>
+                                            <div class="price text-center">
+                                                110$
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="clearfix">
+                                                <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                                    إضافة للعربية
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay">
+                                            <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                        <img src="./images/hm_3.jpg" alt="قطم للصغار">
+                                        <div class="card-body">
+                                            <h4 class="text-center">قطم للصغار</h4>
+                                            <div class="price text-center">
+                                                25$
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="clearfix">
+                                                <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                                    إضافة للعربية
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay">
+                                            <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                        <img src="./images/adidas_4.jpg" alt="تيشيرت ألتبعيت">
+                                        <div class="card-body">
+                                            <h4 class="text-center">فتورا تيشيرت</h4>
+                                            <div class="price text-center">
+                                                35$
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="clearfix">
+                                                <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                                    إضافة للعربية
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="sale">50%</div>
+                                        <div class="overlay">
+                                            <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                        <img src="./images/lacoste_1.jpg" alt="تيشيرت رجالي">
+                                        <div class="card-body">
+                                            <h4 class="text-center">تيشيرت رجالي</h4>
+                                            <div class="price text-center">
+                                                75$
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="clearfix">
+                                                <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                                    إضافة للعربية
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay">
+                                            <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                        <img src="./images/hm_2.jpg" alt="ثوب بناتي مرقش">
+                                        <div class="card-body">
+                                            <h4 class="text-center">ثوب بناتي مرقش</h4>
+                                            <div class="price text-center">
+                                                20$
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="clearfix">
+                                                <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                                    إضافة للعربية
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay">
+                                            <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                        <img src="./images/puma_1.jpg" alt="حذاء سويدي الرياضي">
+                                        <div class="card-body">
+                                            <h4 class="text-center">حذاء سويدي الرياضي</h4>
+                                            <div class="price text-center">
+                                                55$
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="clearfix">
+                                                <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                                    إضافة للعربية
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay">
+                                            <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                        <img src="./images/polo_2.jpg" alt="قميص سترتش فت">
+                                        <div class="card-body">
+                                            <h4 class="text-center">قميص سترتش فت</h4>
+                                            <div class="price text-center">
+                                                100$
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="clearfix">
+                                                <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                                    إضافة للعربية
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay">
+                                            <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                        <img src="./images/adidas_2.jpg" alt="حذاء بيور بوست">
+                                        <div class="card-body">
+                                            <h4 class="text-center">حذاء بيور بوست</h4>
+                                            <div class="price text-center">
+                                                135$
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="clearfix">
+                                                <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                                    إضافة للعربية
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay">
+                                            <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                        <img src="./images/polo_1.jpg" alt="قميص ستيم فت">
+                                        <div class="card-body">
+                                            <h4 class="text-center">قميص ستيم فت</h4>
+                                            <div class="price text-center">
+                                                85$
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="clearfix">
+                                                <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                                    إضافة للعربية
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                                    <div class="card custom-thumbnail">
+                                        <div class="sale">30%</div>
+                                        <div class="overlay">
+                                            <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                        <img src="./images/lacoste_2.jpg" alt="حقيبة شانتاكو">
+                                        <div class="card-body">
+                                            <h4 class="text-center">حقيبة شانتاكو</h4>
+                                            <div class="price text-center">
+                                                180$
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                            </div>
+                                            <div class="clearfix">
+                                                <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                                    إضافة للعربية
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators custom-carousel-indicators">
+                        <li data-target="#carousel-most-sold" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-most-sold" data-slide-to="1"></li>
+                        <li data-target="#carousel-most-sold" data-slide-to="2"></li>
+                    </ol>
+                </div>
+                <!-- carousel نهاية الأساسية -->
+                <!-- carousel البديلة -->
+                <div id="carousel-most-sold-alternative" class="carousel slide d-md-none" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="active carousel-item">
+                            <div class="cart custom-thumbnail" data-product="">
+                                <div class="overlay">
+                                    <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                        إضافة للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <img src="./images/most_sold_2.jpg" alt="فلورا تيشيرت">
+                                <div class="cart-body">
+                                    <div class="clearfix">
+                                        <h4 class="text-center">فلورا تيشيرت</h4>
+                                        <div class="price text-center">
+                                            200$
+                                        </div>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="clearfix">
+                                        <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                            إضافة للعربية
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail" data-product="">
+                                <div class="overlay">
+                                    <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                        إضافة للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <img src="./images/most_sold_1.jpg" alt="شير بنوز من نافي">
+                                <div class="card-body">
+                                    <h4 class="text-center">شير بنوز من نافي</h4>
+                                    <div class="price text-center">
+                                        88$
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="clearfix">
+                                        <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                            إضافة للعربية
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail" data-product="">
+                                <div class="sale">50%</div>
+                                <div class="overlay">
+                                    <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                        إضافة للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <img src="./images/most_sold_3.jpg" alt="جاكت أولادي">
+                                <div class="card-body">
+                                    <h4 class="text-center">جاكت أولادي</h4>
+                                    <div class="price text-center">
+                                        110$
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="clearfix">
+                                        <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                            إضافة للعربية
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail" data-product="">
+                                <div class="overlay">
+                                    <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                        إضافة للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <img src="./images/hm_3.jpg" alt="قطم للصغار">
+                                <div class="card-body">
+                                    <h4 class="text-center">قطم للصغار</h4>
+                                    <div class="price text-center">
+                                        25$
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="clearfix">
+                                        <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                            إضافة للعربية
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail" data-product="">
+                                <div class="overlay">
+                                    <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                        إضافة للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <img src="./images/adidas_4.jpg" alt="تيشيرت ألتيميت">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="text-center">تيشيرت ألتيميت</h4>
+                                        <div class="price text-center">
+                                            200$
+                                        </div>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="clearfix">
+                                        <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                            إضافة للعربة
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail" data-product="">
+                                <div class="overlay">
+                                    <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                        إضافة للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <img src="./images/lacoste_1.jpg" alt="تي شيرت رجالي">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="text-center">تي شيرت رجالي</h4>
+                                        <div class="price text-center">
+                                            50$
+                                        </div>
+                                    </div>
+                                    <div class="rating ">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="clearfix">
+                                        <button class="btn btn-defauly custom-btn add-to-cart-btn d-block d-lg-none">
+                                            إضافة للعربة
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carousel نهاية البديلة -->
+                <!-- مؤشرات carousel البديله -->
+                <div class="col-12 d-md-none text-center">
+                    <button class="btn custom-arrow-btn" data-target="#carousel-most-sold-alternative" data-slide="prev">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="btn custom-arrow-btn" data-target="#carousel-most-sold-alternative" data-slide="next">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+                <!-- مؤشرات carousel نهاية البديله -->
+            </div>
+        </div>
+        <!-- نهاية المنتجات الأكثر مبيعا-->
+        <!-- المركات العالمية -->
+        <div id="row-brands">
+            <div class="container">
+                <h3 class="custom-heading">
+                    المركات العالمية
+                </h3>
+                <div class="row">
+                    <!-- منتج الشركه 1 -->
+                    <div class="col-md-6 col-12 brand-products">
+                        <div class="custom-panel">
+                            <div id="carousel-brand-adidas" class="carousel slide" data-slide="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <img src="./images/adidas_1.jpg" alt="قميص تك فت بير" class="product-image">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block d-none d-lg-block">
+                                                    تصفح المنتج
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-8 product-details">
+                                                <div class="clearfix">
+                                                    <div class="float-right">
+                                                        <h4>قميص تك فت بير</h4>
+                                                    </div>
+                                                    <div class="float-left price">
+                                                        35$
+                                                    </div>
+                                                </div>
+                                                <p class="custom-text-muted">
+                                                    حقق أقصى أداء أثناء تمارينك الرياضية مع هذا القميص الذي يمنحك الراحة ويدعم عضلاتك
+                                                </p>
+                                                <div class="rating">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 d-lg-none">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block">تصفح المنتج</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <!--صورة المنتج-->
+                                                <img src="./images/adidas_2.jpg" alt="حذاء بيور بوست الرياضي" class="product-image">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block d-none d-lg-block">
+                                                    تصفح المنتج
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-8 product-details">
+                                                <!--وصف المنتج-->
+                                                <div class="clearfix">
+                                                    <div class="float-right">
+                                                        <h4>حذاء بيور بوست الرياضي</h4>
+                                                    </div>
+                                                    <div class="float-left price">
+                                                        150$
+                                                    </div>
+                                                </div>
+                                                <p class="custom-text-muted">
+                                                    جرب شعور الخفة واجرِ بأقصى سرعة مع حذاء بيور بوست الرياضي من Adidas.
+                                                </p>
+                                                <div class="rating">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 d-lg-none">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block">تصفح المنتج</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand-nav">
+                                    <div class="clearfix">
+                                        <div class="float-right">
+                                            <div class="brand-text">
+                                                الماركه:
+                                            </div>
+                                            <img src="./images/adidas_small.png" alt="Adidas">
+                                        </div>
+                                        <div class="float-left">
+                                            <button class="btn custom-arrow-btn" data-target="#carousel-brand-adidas" data-slide="prev">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                            <button class="btn custom-arrow-btn" data-target="#carousel-brand-adidas" data-slide="next">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- نهايه منتج الشركه 1 -->
+                    <!-- منتج الشركه 2 -->
+                    <div class="col-md-6 col-12 brand-products">
+                        <div class="custom-panel">
+                            <div id="carousel-brand-puma" class="carousel slide" data-slide="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <!--صورة المنتج-->
+                                                <img src="./images/puma_1.jpg" alt="حذاء سويدي الرياضي" class="product-image">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block d-none d-lg-block">
+                                                    تصفح المنتج
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-8 product-details">
+                                                <!--وصف المنتج-->
+                                                <div class="clearfix">
+                                                    <div class="float-right">
+                                                        <h4>حذاء سويدي الرياضي</h4>
+                                                    </div>
+                                                    <div class="price float-left">
+                                                        75$
+                                                    </div>
+                                                </div>
+                                                <p class="custom-text-muted">
+                                                    الحذاء الرياضي العريق الذي استعمله أعظم لاعبي الرياضة منذ الستينات.
+                                                </p>
+                                                <div class="rating">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 d-lg-none">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block">تصفح المنتج</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <!--صورة المنتج-->
+                                                <img src="./images/puma_3.jpg" alt="حذاء التنس سماش بَك" class="product-image">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block d-none d-lg-block">
+                                                    تصفح المنتج
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-8 product-details">
+                                                <!--وصف المنتج-->
+                                                <div class="clearfix">
+                                                    <div class="float-left">
+                                                        <h4>حذاء التنس سماش بَك</h4>
+                                                    </div>
+                                                    <div class="float-right price">
+                                                        65$
+                                                    </div>
+                                                </div>
+                                                <p class="custom-text-muted">
+                                                    حذاء التنس المريح والأنيق من بوما، مناسب لساعات طويلة من التمرين.
+                                                </p>
+                                                <div class="rating">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 d-lg-none">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block">تصفح المنتج</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brand-nav">
+                                <div class="clearfix">
+                                    <div class="float-right">
+                                        <div class="brand-text">الماركة:</div>
+                                        <img src="./images/puma_small.png" alt="Puma">
+                                    </div>
+                                    <div class="float-left">
+                                        <button class="btn custom-arrow-btn" data-target="#carousel-brand-puma" data-slide="prev">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                        <button class="btn custom-arrow-btn" data-target="#carousel-brand-puma" data-slide="next">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- منتج الشركه 2 -->
+                    <!-- منتج الشركه 3 -->
+                    <div class="col-md-6 col-12 brand-products">
+                        <div class="custom-panel">
+                            <div id="carousel-brand-polo" class="carousel slide" data-slide="carousel">
+                                <div class="carousel-inner">
+                                    <div class="active carousel-item">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <!--صورة المنتج-->
+                                                <img src="./images/polo_1.jpg" alt="قميص سليم-فت" class="product-image">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block d-none d-lg-block">
+                                                    تصفح المنتج
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-8 product-details">
+                                                <!--وصف المنتج-->
+                                                <div class="clearfix">
+                                                    <div class="float-right">
+                                                        <h4>قميص سليم-فت</h4>
+                                                    </div>
+                                                    <div class="price float-left">
+                                                        85$
+                                                    </div>
+                                                </div>
+                                                <p class="custom-text-muted">
+                                                    القميص الّذي ظهر في 1972، أصبح متوفرًا بألوان وقياسات متنوعة تناسب الجميع.
+                                                </p>
+                                                <div class="rating">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 d-lg-none">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block">تصفح المنتج</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <!--صورة المنتج-->
+                                                <img src="./images/polo_2.jpg" alt="قميص سترتش فت" class="product-image">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block d-none d-lg-block">
+                                                    تصفح المنتج</a>
+                                            </div>
+                                            <div class="col-lg-8 product-details">
+                                                <!--وصف المنتج-->
+                                                <div class="clearfix">
+                                                    <div class="float-right">
+                                                        <h4>قميص سترتش فت</h4>
+                                                    </div>
+                                                    <div class="price float-left">
+                                                        100$
+                                                    </div>
+                                                </div>
+                                                <p class="custom-text-muted">
+                                                    مصنوع من القطن ومزيّن بأزرار من براقة، قميص يمثل الراحة ذاتها.
+                                                </p>
+                                                <div class="rating">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 d-lg-none">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block">تصفح المنتج</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brand-nav">
+                                <div class="clearfix">
+                                    <div class="float-right">
+                                        <div class="brand-text">الماركة:</div>
+                                        <img src="./images/polo_small.png" alt="Polo">
+                                    </div>
+                                    <div class="float-left">
+                                        <button class="btn custom-arrow-btn" data-target="#carousel-brand-polo" data-slide="prev">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                        <button class="btn custom-arrow-btn" data-target="#carousel-brand-polo" data-slide="next">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- منتج الشركه 3 -->
+                    <!-- منتج الشركه 4 -->
+                    <div class="col-md-6 col-12 brand-products">
+                        <div class="custom-panel">
+                            <div id="carousel-brand-hm" class="carousel slide" data-slide="carousel">
+                                <div class="carousel-inner">
+                                    <div class="active carousel-item">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <!--صورة المنتج-->
+                                                <img src="./images/hm_2.jpg" alt="ثوب بناتي مرقش" class="product-image">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block d-none d-lg-block">تصفح
+                                                    المنتج</a>
+                                            </div>
+                                            <div class="col-lg-8 product-details">
+                                                <!--وصف المنتج-->
+                                                <div class="clearfix">
+                                                    <div class="float-right">
+                                                        <h4>ثوب بناتي مرقش</h4>
+                                                    </div>
+                                                    <div class="price float-left">
+                                                        20$
+                                                    </div>
+                                                </div>
+                                                <p class="custom-text-muted">
+                                                    مصنوع من القطن الطبيعي، يُعطي لطفلتك الراحة أثناء اللعب، متوفّر بألوان عديدة.
+                                                </p>
+                                                <div class="rating">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 d-lg-none">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block">تصفح المنتج</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <!--صورة المنتج-->
+                                                <img src="./images/hm_3.jpg" alt="طقم للصغار" class="product-image">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block d-none d-lg-block">تصفح
+                                                    المنتج</a>
+                                            </div>
+                                            <div class="col-lg-8 product-details">
+                                                <!--وصف المنتج-->
+                                                <div class="clearfix">
+                                                    <div class="float-right">
+                                                        <h4>طقم للصغار</h4>
+                                                    </div>
+                                                    <div class="price float-left">
+                                                        25$
+                                                    </div>
+                                                </div>
+                                                <p class="custom-text-muted">
+                                                    ملائم للأطفال بين 3-5 سنوات، ذو مظهر جذّاب وأنيق
+                                                </p>
+                                                <div class="rating">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 d-lg-none">
+                                                <a href="product.html" class="btn custom-btn custom-btn-primary btn-block">تصفح المنتج</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brand-nav">
+                                <div class="clearfix">
+                                    <div class="float-right">
+                                        <div class="brand-text">الماركة:</div>
+                                        <img src="./images/hm_small.png" alt="H and M">
+                                    </div>
+                                    <div class="float-left">
+                                        <button class="btn custom-arrow-btn" data-target="#carousel-brand-hm" data-slide="prev">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                        <button class="btn custom-arrow-btn" data-target="#carousel-brand-hm" data-slide="next">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- منتج الشركه 4 -->
+                </div>
+            </div>
+        </div>
+        <!--  نهاية المركات العالمية -->
+        <!-- تذيل الصفحه -->
+        <div id="footer" class="row">
+            <div id="brand-logos" class="col-12 text-center">
+                <span>
+                    المتاجر وكيل معتمد لكبرى الشركات العالمية
+                </span>
+                <div class="img-container">
+                    <img src="./images/lacoste.png" alt="Lacoste">
+                    <img src="./images/adidas.png" alt="Adidas">
+                    <img src="./images/puma.png" alt="Puma">
+                    <img src="./images/polo.png" alt="Polo">
+                </div>
+            </div>
+            <div id="footer-nav" class="col-12 text-center">
+                <div class="foonter-logo">
+                    <a href="./">
+                        <img src="./images/logo_footer.png" alt="عربي">
+                    </a>
+                </div>
+                <div id="footer-nav-links" class="col-12 d-none d-md-block">
+                    <a href=".">الصفحة الرئيسية</a>
+                    <a href="search.html">البحث المتقدم</a>
+                    <a href="contact">تواصل معنا</a>
+                </div>
+                <div id="newsletter" class="col-md-6 offset-md-3">
+                    <form action="">
+                        <label for="foonter-email">
+                            تابع النشرة البريدية لأحدث العروض
+                        </label>
+                        <br>
+                        <div class="input-group">
+                            <input type="email" class="form-control custom-form-control"
+                            placeholder="البريد الإلكتروني" name="email" required>
+                            <button type="submit" class="btn custom-btn custom-btn-primary2">
+                                متابعة
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="footer-copyright-social" class="col-12">
+                <div class="container">
+                    <div class="clearfix">
+                        <div id="copyright" class="float-right">
+                            
+                        </div>
+                        <div id="social-icons" class="float-left">
+                            <a href="https://www.facebook.com">
+                                <i class="fab fa-facebook-square fa-lg"></i>
+                            </a>
+                            <a href="https://www.twitter.com">
+                                <i class="fab fa-twitter-square fa-lg"></i>
+                            </a>
+                            <a href="https://www.instagram.com">
+                                <i class="fab fa-instagram-square fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- نهاية تذيل الصفحه -->
+    </div>
+</body>
+</html>
